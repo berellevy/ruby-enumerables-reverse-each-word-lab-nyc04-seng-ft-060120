@@ -3,9 +3,9 @@ require "pry"
 def reverse_each_word(sentence)
   sentence = sentence.split(" ")
   # binding.pry
-  sentence.collect { |w|
+  sentence = sentence.collect { |w|
     w = w.reverse
-    binding.pry
+    # binding.pry
   }
   sentence.join(" ")
 end
